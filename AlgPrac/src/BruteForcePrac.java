@@ -75,7 +75,7 @@ public class BruteForcePrac {
 		for(int i = 0; i < size; i++) {
 			values[i] = (r.nextInt(99) + 1);
 		}
-		//Selection sort test
+		//Selection sort testing
 		System.out.println("Non sorted array: " + printArray(values));
 		selectionSort(values);
 		System.out.println("Sorted array: " + printArray(values));
