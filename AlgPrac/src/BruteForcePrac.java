@@ -38,6 +38,7 @@ public class BruteForcePrac {
 		int num = 64;
 		System.out.println("The square root of " + num +
 				" is: " + square_root(num));
+		
 		//Exhaustive search testing populates array with
 		//random numbers from 1 to 100
 		int size = 50;
