@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class BruteForcePrac {
+public class BruteForce {
 	/**
 	 * Brute force method for finding the integer square root of a value
 	 * @param n - given value
