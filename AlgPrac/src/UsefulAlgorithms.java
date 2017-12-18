@@ -1,5 +1,5 @@
 
-public class UsefulAlgorithmsPrac {
+public class UsefulAlgorithms {
 
 	/**
 	 * Recursive implementation of Euclid's Algorithm
