@@ -13,7 +13,7 @@ function binarySearch(list, match) {
   var left = 0;
   var right = list.length - 1;
   var pivot = Math.floor((left + right)/2);
-  while(list[pivot] !== match) {
+  while(list[pivot] !== match && left <= right) {
     if(list[pivot] < match) {
       //Recalculate left
       left = pivot + 1;
@@ -24,9 +24,15 @@ function binarySearch(list, match) {
     //Recalculate pivot
     pivot = Math.floor((left + right)/2);
   }
-  return pivot;
+  //Check to make sure match was found before returning
+  if(list[pivot] === match) {
+    return pivot;
+  } else {
+    return -1;
+  }
 }
 
+//Testing code
 var arr = [1,2,3,4,5,6,7,8,9,10];
 console.log(linearSearch(arr, 8))
 console.log(binarySearch(arr, 8));
