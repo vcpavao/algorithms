@@ -32,7 +32,33 @@ function binarySearch(list, match) {
   }
 }
 
+//Naive String Search
+function naiveString(str, sequence) {
+  var count = 0;
+  for(var i = 0; i < str.length; i++) {
+    if(str[i] === sequence[0]) {
+      var seqIndex = 1;
+      var strIndex = i + 1;
+      while(str[strIndex] === sequence[seqIndex] && strIndex < str.length && seqIndex < sequence.length) {
+        strIndex++;
+        seqIndex++;
+        if(seqIndex === sequence.length) {
+          count++;
+        }
+      }
+    }
+  }
+  return count;
+}
+
+//KMP String Search
+function kmpString(str, sequence) {
+
+}
+
 //Testing code
 var arr = [1,2,3,4,5,6,7,8,9,10];
 console.log(linearSearch(arr, 8))
 console.log(binarySearch(arr, 8));
+
+console.log(naiveString("hahaha jfkiohauqweiu c ha", "ha"));
