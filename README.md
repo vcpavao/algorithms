@@ -1,5 +1,5 @@
 # Algorithms
-The purpose of this repository is to demonstrate examples of different kinds of algorithms in the world of computing. Understanding different approaches to designing and implementing algorithms is essential to being a software engineer. All programs are written in Java using Eclipse IDE.
+The purpose of this repository is to demonstrate examples of different kinds of algorithms in the world of computing. Understanding different approaches to designing and implementing algorithms is essential to being a software engineer. Programs are written in Java and Javascript.
 
 ### Categories
 
