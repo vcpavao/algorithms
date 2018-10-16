@@ -38,7 +38,7 @@ function naiveString(str, sequence) {
   for(var i = 0; i < str.length; i++) {
     if(str[i] === sequence[0]) {
       var seqIndex = 1;
-      var strIndex = i + 1;
+      var strIndex = i + seqIndex;
       while(str[strIndex] === sequence[seqIndex] && strIndex < str.length && seqIndex < sequence.length) {
         strIndex++;
         seqIndex++;
@@ -46,12 +46,13 @@ function naiveString(str, sequence) {
           count++;
         }
       }
+      i += seqIndex - 1;
     }
   }
   return count;
 }
 
-//KMP String Search
+//TODO: KMP String Search
 function kmpString(str, sequence) {
 
 }
@@ -61,4 +62,4 @@ var arr = [1,2,3,4,5,6,7,8,9,10];
 console.log(linearSearch(arr, 8))
 console.log(binarySearch(arr, 8));
 
-console.log(naiveString("hahaha jfkiohauqweiu c ha", "ha"));
+console.log(naiveString("hello hello sdioafhsdifooasjfiajpdoajsdpfod  helo ", "hello"));
